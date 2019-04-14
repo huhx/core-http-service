@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk
+FROM openjdk:11.0.2-jdk
 VOLUME /tmp
 ARG DEPENDENCY=target/dependency
 COPY ${DEPENDENCY}/BOOT-INF/lib /app/lib
