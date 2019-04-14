@@ -4,4 +4,6 @@ docker rm $(docker stop $(docker ps -a -q --filter ancestor=huhx/core-http-servi
 
 ./gradlew build docker
 
+docker run -d -p 9095:9095 --name core-http-service huhx/core-http-service
+
 echo 'success'
