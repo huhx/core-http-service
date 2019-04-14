@@ -17,12 +17,12 @@ public class HttpController {
 
   @GetMapping("/{id}")
   public ResponseEntity<People> getPeopleById(@PathVariable("id") String id) {
-    return ResponseEntity.ok(new People(id, "huhx", 25, new Date()));
+    return ResponseEntity.ok(new People(id, "huhx", 25));
   }
 
   @GetMapping
   public ResponseEntity<People> getPeopleByIdParameter(@RequestParam("id") String id) {
-    return ResponseEntity.ok(new People(id, "huhx", 25, new Date()));
+    return ResponseEntity.ok(new People(id, "huhx", 25));
   }
 
   @PostMapping

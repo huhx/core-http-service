@@ -1,14 +1,11 @@
 package com.linux.huhx.http.domain;
 
-import java.util.Date;
-
 public class People {
 
-  public People(String id, String username, Integer age, Date birthday) {
+  public People(String id, String username, Integer age) {
     this.id = id;
     this.username = username;
     this.age = age;
-    this.birthday = birthday;
   }
 
   private String id;
@@ -16,12 +13,6 @@ public class People {
   private String username;
 
   private Integer age;
-
-  private Date birthday;
-
-  public String getId() {
-    return id;
-  }
 
   public void setId(String id) {
     this.id = id;
@@ -43,11 +34,4 @@ public class People {
     this.age = age;
   }
 
-  public Date getBirthday() {
-    return birthday;
-  }
-
-  public void setBirthday(Date birthday) {
-    this.birthday = birthday;
-  }
 }
